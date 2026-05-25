@@ -13,9 +13,21 @@ html, body, #root {
   background: #0d2818;
   font-family: 'Playfair Display', Georgia, serif;
   overscroll-behavior: none;
+  touch-action: manipulation;
 }
 
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+@media (hover: none) {
+  button:hover {
+    background-color: inherit;
+  }
 }
